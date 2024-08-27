@@ -1,33 +1,33 @@
 #점수 계산
-# array = []
+array = []
 
-# for _ in range(8):
-#     array.append(int(input()))
+for _ in range(8):
+    array.append(int(input()))
     
-# array_sort = sorted(array, reverse=True)
+array_sort = sorted(array, reverse=True)
 
-# sum = sum(array_sort[:5])
-# print(sum)
+sum = sum(array_sort[:5])
+print(sum)
 
-# result = []
-# for i in range(5):
-#     result.append(array.index(array_sort[i])+1)
+result = []
+for i in range(5):
+    result.append(array.index(array_sort[i])+1)
 
-# for i in sorted(result):
-#     print(i, end=" ")
+for i in sorted(result):
+    print(i, end=" ")
     
 #카드
-# N = int(input())
-# r = dict()
-# for _ in range(N):
-#     n = int(input())
-#     if n in r:
-#         r[n] += 1
-#     else:
-#         r[n] = 1
+N = int(input())
+r = dict()
+for _ in range(N):
+    n = int(input())
+    if n in r:
+        r[n] += 1
+    else:
+        r[n] = 1
 
-# sort_r = sorted(r.items(), key=lambda x: (-x[1], x[0]))
-# print(sort_r[0][0])
+sort_r = sorted(r.items(), key=lambda x: (-x[1], x[0]))
+print(sort_r[0][0])
 
 #두 수의 합
 import sys
